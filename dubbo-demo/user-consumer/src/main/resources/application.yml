@@ -1,0 +1,19 @@
+server:
+  port: 18080
+spring:
+  application:
+    name: user-consumer
+logging:
+  level:
+    cn.itcast: debug
+  pattern:
+    dateformat: HH:mm:ss:SSS
+dubbo:
+  protocol:
+    name: dubbo
+    port: 20881
+  registry:
+    address: nacos://119.29.2.229:8848
+  consumer:
+    timeout: 10000
+    retries: 0

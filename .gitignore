@@ -1,0 +1,5 @@
+# Project exclude paths
+/cloud-dubbo-demo/dubbo-domain/target/
+/cloud-dubbo-demo/order-service/target/
+/cloud-dubbo-demo/user-service/target/
+/dubbo-demo/user-server/target/
