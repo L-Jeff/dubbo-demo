@@ -6,3 +6,22 @@ spring:
     username: root
     password: jeff123
     driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 119.29.2.229:8848
+  application:
+    name: order-service
+logging:
+  level:
+    cn.itcast: debug
+  pattern:
+    dateformat: HH:mm:ss:SSS
+dubbo:
+  registry:
+    address: spring-cloud://119.29.2.229
+  consumer:
+    check: false
+    retries: 0
+  scan:
+    base-packages: cn.itcast.order.service

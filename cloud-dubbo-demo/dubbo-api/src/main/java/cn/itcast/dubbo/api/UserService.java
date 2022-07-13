@@ -1,4 +1,4 @@
-package cn.itcast.user.service;
+package cn.itcast.dubbo.api;
 
 
 import cn.itcast.dubbo.domain.User;

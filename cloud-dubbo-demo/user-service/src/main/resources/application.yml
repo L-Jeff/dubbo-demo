@@ -6,3 +6,22 @@ spring:
     username: root
     password: jeff123
     driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 119.29.2.229:8848
+  application:
+    name: user-service
+logging:
+  level:
+    cn.itcast: debug
+  pattern:
+    dateformat: HH:mm:ss:SSS
+dubbo:
+  protocol:
+    name: dubbo
+    port: 20881
+  registry:
+    address: spring-cloud://119.29.2.229
+  scan:
+    base-packages: cn.itcast.user.service
